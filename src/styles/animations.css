@@ -1,0 +1,189 @@
+    @keyframes hide_down {
+	0% {
+	    opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+	    opacity: 0;
+		transform: translateY(.5rem);
+	}
+}
+
+.hide_down {
+    animation: hide_down .2s ease forwards;
+}
+
+    @keyframes hide_up {
+	0% {
+	    opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+	    opacity: 0;
+		transform: translateY(-.5rem);
+	}
+}
+
+.hide_up {
+    animation: hide_up .2s ease forwards;
+}
+
+    @keyframes hide_right {
+	0% {
+	    opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+	    opacity: 0;
+		transform: translateX(.5rem);
+	}
+}
+
+.hide_right {
+    animation: hide_right .2s ease forwards;
+}
+
+    @keyframes hide_left {
+	0% {
+	    opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+	    opacity: 0;
+		transform: translateX(-.5rem);
+	}
+}
+
+.hide_left {
+    animation: hide_left .2s ease forwards;
+}
+
+
+
+
+
+
+
+
+    @keyframes show_down {
+	0% {
+	    opacity: 0;
+		transform: translateY(.5rem);
+	}
+	100% {
+	    opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.show_down {
+    animation: show_down .2s ease forwards;
+}
+
+    @keyframes show_up {
+	0% {
+	    opacity: 0;
+		transform: translateY(-.5rem);
+	}
+	100% {
+	    opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.show_up {
+    animation: show_up .2s ease forwards;
+}
+
+    @keyframes show_right {
+	0% {
+	    opacity: 0;
+		transform: translateX(.5rem);
+	}
+	100% {
+	    opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.show_right {
+    animation: show_right .2s ease forwards;
+}
+
+    @keyframes show_left {
+	0% {
+	    opacity: 0;
+		transform: translateX(-.5rem);
+	}
+	100% {
+	    opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.show_left {
+    animation: show_left .2s ease forwards;
+} 
+
+
+    
+    @keyframes loading-light {
+      0% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    }   
+    
+    @keyframes loading-dark {
+      0% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    } 
+
+
+    @keyframes like {
+      0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.2, 1.2);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    div[loading] {
+    color: transparent;
+    background: linear-gradient(100deg, #f5f5f5 30%, #ffffff 50%, #f5f5f5 70%);
+    background-size: 400%;
+    animation: loading-light 1.2s ease-in-out infinite;
+  }
+
+  .dark div[loading] {
+    color: transparent;
+    background: linear-gradient(100deg, #262626 30%, #171717 50%, #262626 70%);
+    background-size: 400%;
+    animation: loading-dark 1.2s ease-in-out infinite;
+  }
+  
+  @keyframes loadingopacity {
+      0% {
+        opacity: 70%;
+      }
+      50% {
+          opacity: 40%;
+      }
+      100% {
+        opacity: 70%;
+      }
+    }  
+    
+    div[loadingopacity] {
+        animation: loadingopacity 1s ease-in-out infinite;
+    }
